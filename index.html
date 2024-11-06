@@ -1,96 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> -->
+  </head>
+  <body>
     <div class="container">
-        <aside class="sidebar">
-            <div class="logo">Logo</div>
-            <nav class="menu">
-                <a href="#" class="active">My Cards</a>
-                <a href="#">Wallets</a>
-                <a href="#">Expenses</a>
-                <a href="#">Documents</a>
-                <a href="#">Goals</a>
-            </nav>
-            <div class="settings">Settings</div>
-        </aside>
+      <aside class="sidebar">
+        <div class="logo">Logo</div>
+        <nav class="menu">
+          <a href="#" class="active"
+            ><span class="material-symbols-outlined"> credit_card </span>My
+            Cards</a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined">
+              account_balance_wallet </span
+            >Wallets</a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined"> trending_up </span
+            >Expenses</a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined"> draft </span>Documents</a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined"> editor_choice </span
+            >Goals</a
+          >
+        </nav>
+        <div class="settings">
+          <span class="material-symbols-outlined"> settings </span>Settings
+        </div>
+      </aside>
 
-        <main class="main-content">
-            <header class="header">
-                <h1>My Cards</h1>
-                <input type="text" placeholder="Search">
-            </header>
+      <main class="main-content">
+        <header class="header">
+          <h1>My card</h1>
+          <div>
+            <span class="material-symbols-outlined"> search </span>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> mail </span>
+            <span class="material-symbols-outlined">notifications_unread</span>
+            <span class="material-symbols-outlined">face</span>
+          </div>
+        </header>
 
-            <section class="cards-section">
-                <div class="tab-menu">
-                    <button class="active">Credit Card</button>
-                    <button>Paypal</button>
-                    <button>Other</button>
-                </div>
+        <nav style="margin-top: 2rem" class="cards-section">
+          <div class="tab-menu">
+            <button class="active">Credit Card</button>
+            <button>Paypal</button>
+            <button>Other</button>
+          </div>
+        </nav>
 
-                <div class="cards">
-                    <div class="card black">
-                        <p>Gold card</p>
-                        <h2>$4,675.80</h2>
-                        <p>**** 8600</p>
-                    </div>
-                    <div class="card blue">
-                        <p>Gold card</p>
-                        <h2>$4,675.80</h2>
-                        <p>**** 8600</p>
-                    </div>
-                    <div class="card orange">
-                        <p>Gold card</p>
-                        <h2>$4,675.80</h2>
-                        <p>**** 8600</p>
-                    </div>
-                </div>
+        <section style="margin-top: 2rem; display: flex; justify-content: space-between;">
+        <div style="display: flex;">
+            <div class="cards">
+              <div class="card black">
+                <p>Gold card</p>
+                <h2>$4,675.80</h2>
+                <p>**** 8600</p>
+              </div>
+              <div class="card blue">
+                <p>Gold card</p>
+                <h2>$4,675.80</h2>
+                <p>**** 8600</p>
+              </div>
+              <div class="card orange">
+                <p>Gold card</p>
+                <h2>$4,675.80</h2>
+                <p>**** 8600</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="transactions">
+            <h3>Last Transactions</h3>
+            <div class="transaction">
+              <p>METRO Store</p>
+              <span>-240 $</span>
+            </div>
+            <div class="transaction">
+              <p>From John</p>
+              <span>+1000 $</span>
+            </div>
+            <div class="transaction">
+              <p>IKEA</p>
+              <span>-120 $</span>
+            </div>
+            <div class="transaction">
+              <p>Gym</p>
+              <span>-32 $</span>
+            </div>
+          </div>
+       <div style="display: flex;">
+          <div class="balance">
+            <h2>$3,502</h2>
+            <p>Your total amount</p>
+            <button>Withdraw All Earnings</button>
+          </div>
 
-                <div class="transactions">
-                    <h3>Last Transactions</h3>
-                    <div class="transaction">
-                        <p>METRO Store</p>
-                        <span>-240 $</span>
-                    </div>
-                    <div class="transaction">
-                        <p>From John</p>
-                        <span>+1000 $</span>
-                    </div>
-                    <div class="transaction">
-                        <p>IKEA</p>
-                        <span>-120 $</span>
-                    </div>
-                    <div class="transaction">
-                        <p>Gym</p>
-                        <span>-32 $</span>
-                    </div>
-                </div>
-            </section>
-
-            <section class="summary-section">
-                <div class="balance">
-                    <h2>$3,502</h2>
-                    <p>Your total amount</p>
-                    <button>Withdraw All Earnings</button>
-                </div>
-
-                <div class="statistics">
-                    <h3>Statistics</h3>
-                    <div class="chart">[Chart Placeholder]</div>
-                    <ul>
-                        <li>Shopping: $774</li>
-                        <li>Food & Drinks: $1,567</li>
-                        <li>Transport: $789</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+          <div class="statistics">
+            <h3>Statistics</h3>
+            <div class="chart"></div>
+            <ul>
+              <li>Shopping: $774</li>
+              <li>Food & Drinks: $1,567</li>
+              <li>Transport: $789</li>
+            </ul>
+            <div>
+                <img style="width: 20%;" src="img/dash.jpg" alt="">
+            </div>
+          </div>
+        </div>
     </div>
-</body>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
-
